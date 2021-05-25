@@ -76,7 +76,7 @@ public class ContactsModificationController {
 
         ImageView imageView = new ImageView();
 
-        contacts.add(new Contact("Valeriya", "Nikiforova", "valeriya.nikiforova_2022@ucentralasia.org", "+77051704184"));
+        contacts.add(new Contact("Hamroz", "Gavharov", "hamroz.gavharov_2023@ucentralasia.org", "+992501123333"));
         contactsListView.setItems(contacts);
         Image icon = new Image(contacts.get(0).getPathToImage());
         Image[] listOfImages = new Image[contacts.size()];

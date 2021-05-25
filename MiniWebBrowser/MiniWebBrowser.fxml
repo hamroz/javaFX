@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MiniWebBrowser.MiniWebBrowserController">
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <items>
+                <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" />
+                <Button fx:id="nextButton" mnemonicParsing="false" onAction="#nextButtonPressed" text="Next" />
+                <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#refreshButtonPressed" text="⟳" />
+                <TextField fx:id="addressTextField" prefHeight="25.0" prefWidth="379.0" />
+                <Button fx:id="searchButton" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="64.0" text="Search" />
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <WebView fx:id="myWebView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </padding>
+</BorderPane>
